@@ -92,4 +92,21 @@
             }
         }
     }
+    .toggle-nav{
+        color:variables.$light_green;
+        font-size:2rem;
+        margin:2rem;
+        cursor:pointer;
+        display:none
+    }
+}
+@media screen and (max-width: 950px){
+    .nav-bar{
+        .nav-items{
+            display:none;
+        }
+        .toggle-nav{
+            display: block;
+        }
+    }
 }

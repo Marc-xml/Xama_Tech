@@ -1,9 +1,8 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import Layout from './components/Layout/Layout.scss'
 import Navbar from './components/Navbar/Navbar'
 import {BsFacebook, BsWhatsapp,BsInstagram,BsGithub} from 'react-icons/bs'
+import Sidebar from './components/Sidebar/Sidebar'
 function App() {
 
   return (
@@ -25,7 +24,7 @@ function App() {
              <a>
              <BsGithub />
              </a>
-             <span class="vertical-line"></span>
+             <span className="vertical-line"></span>
 
              </div>
              <div className='hero'>
@@ -48,7 +47,9 @@ function App() {
           <span class="vertical-line"></span>
           
           </div>
+
       </div>
+      <Sidebar />
     </div>
   )
 }
