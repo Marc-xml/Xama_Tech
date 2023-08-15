@@ -1,1 +1,95 @@
-@use '../../styles/variables.scss'
+@use '../../styles/variables.scss';
+.nav-bar{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: variables.$mono;
+    background-color: variables.$navy;
+    backdrop-filter: blur(12px);
+    position: fixed;
+
+    transition: top .3s;
+    top:0;
+    left:0;
+    right: 0;
+    .logo{
+        font-size: 3rem;
+        font-weight: 700;
+        color: variables.$light_green;
+        margin:1.5rem;
+        cursor:pointer;
+        will-change: filter;
+        transition: filter 300ms;
+   
+    }
+ 
+  
+    .nav-items{
+        color:variables.$light_text;
+        font-size: 14px;
+        ul{
+            display:flex;
+            text-decoration: none;
+            list-style: none;
+            gap:4rem;
+            li{
+                margin-top:1.5rem;
+                a{
+                    text-decoration: none;
+                    color:inherit;
+                    cursor: pointer;
+                    .item-number{
+                        color:variables.$light_green;
+                        margin-right:2px ;
+                    }
+                    
+                }
+            }
+            li:hover{
+                
+            }
+            a{
+                .back{
+                    background-color: variables.$light_green;
+                    width:7rem;
+                }
+                .contact-button{
+                    color:variables.$light_green;
+                    font-family: variables.$mono;
+                    background-color: transparent;
+                    border: 1px solid variables.$light_green;
+                    height:2.2rem;
+                    width:7rem;
+                    outline:none;
+                    border-radius: 4px;
+                    margin: 1rem 1.5rem;
+                    cursor:pointer;
+                    position: relative;
+                    overflow: hidden;
+                    transition: transform .3s ease-in-out;
+
+                  }
+                  .contact-button:hover{
+                    transition: transform .2s ease-in-out;
+                }
+                .contact-button::after{
+                    content: "";
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    width:100%;
+                    height:100%;
+                    background-color: variables.$light_green;
+                    transform: scaleY(0);
+                    transform-origin: left;
+                    transition: .3s ease-in-out;
+                }
+                button:hover::after{
+                    transform: scaleY(1);
+                    color:red;
+                }
+            }
+        }
+    }
+}

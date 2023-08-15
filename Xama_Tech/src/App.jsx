@@ -1,34 +1,55 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
-
+import Layout from './components/Layout/Layout.scss'
+import Navbar from './components/Navbar/Navbar'
+import {BsFacebook, BsWhatsapp,BsInstagram,BsGithub} from 'react-icons/bs'
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='layout'>
+      <Navbar /> 
+      <div className='page-body'>
+
+         <div className='welcome'>
+             <div className='welcome-info'>
+             <a>
+             <BsFacebook />
+             </a>
+             <a>
+             <BsWhatsapp />
+             </a>
+             <a>
+             <BsInstagram />
+             </a>
+             <a>
+             <BsGithub />
+             </a>
+             <span class="vertical-line"></span>
+
+             </div>
+             <div className='hero'>
+             <span className='hero-title'>Slt Nous Sommes</span>
+             <span className='hero-name'>Xama Tech.</span>
+             <span className='hero-sub'>Nous Contruissons le web.</span>
+
+             <div className='hero-desc'>I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.</div>
+             <button className='hero-button'>Contacter Nous !</button>
+             ddddddddddddddddddddddddddd
+             BsInstagram <br></br>
+             kdhgdhdjdd
+             <br></br>
+             hddjhdjhd
+             </div>
+          </div>
+
+          <div className='contact-info'>
+          <span className="email">marcronaldonganyi@gmail.com</span>
+          <span class="vertical-line"></span>
+          
+          </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
