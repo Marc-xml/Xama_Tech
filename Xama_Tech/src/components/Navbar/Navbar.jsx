@@ -4,6 +4,27 @@ import {DiReact} from 'react-icons/di'
 import {HiOutlineMenuAlt1} from 'react-icons/hi'
 import { useState } from 'react'
 import Sidebar from '../Sidebar/Sidebar'
+import { motion } from "framer-motion";
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.1
+    }
+  }
+};
+
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1
+  }
+};
+
 const Navbar = () => {
     let lastScrollTop = 0;
 const navbar = document.querySelector('.nav-bar');
@@ -25,51 +46,58 @@ window.addEventListener('scroll', function() {
   console.log(showSideBar);
  return (
   <>
-    <div className='nav-bar'>
-      <span className='logo'><DiReact /></span>
+    <motion.div 
+    className='nav-bar'
+    variants={container}
+      initial="hidden"
+      animate="visible">
+      <motion.span className='logo' variants={item}><DiReact /></motion.span>
       <nav className='nav-items'>
-      <ul>
-        <li className='nav-item'>
+      <motion.ul
+      variants={container}
+      initial="hidden"
+      animate="visible">
+        <motion.li className='nav-item' variants={item}>
          <a>
          <span className='item-number'>1.</span>
          A Propos
          </a>
-        </li>
+        </motion.li>
 
-        <li className='nav-item'>
+        <motion.li className='nav-item' variants={item}>
         <a>
         <span className='item-number'>2.</span>
         Nos Services
         </a>
-       </li>
+       </motion.li>
 
-       <li className='nav-item'>
+       <motion.li className='nav-item' variants={item}>
        <a>
        <span className='item-number'>3.</span>
        Contact
        </a>
-      </li>
+      </motion.li>
 
-      <li className='nav-item'>
+      <motion.li className='nav-item' variants={item}>
       <a>
       <span className='item-number'>4.</span>
       Boutique
       </a>
-     </li>
+     </motion.li>
 
  
-     <a>
+     <motion.a variants={item}>
      <span className=''>
      <button className='contact-button'>Whatsapp</button>
 
      </span>
-     </a>
+     </motion.a>
     
-      </ul>
+      </motion.ul>
       </nav>
       <HiOutlineMenuAlt1  className='toggle-nav' onClick={() =>handleSideBar()}/>
    
-    </div>
+    </motion.div>
        <Sidebar 
       show={showSideBar} 
       closeSideBar={handleSideBar}/>
