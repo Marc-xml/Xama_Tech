@@ -6,9 +6,9 @@
     justify-content: space-between;
     font-family: variables.$mono;
     background-color: variables.$navy;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(30px);
     position: fixed;
-
+    z-index:10;
     transition: top .3s;
     top:0;
     left:0;

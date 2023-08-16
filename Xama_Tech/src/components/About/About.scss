@@ -1,0 +1,77 @@
+@use "../../styles/variables.scss";
+
+.about{
+    margin:5rem 0rem;
+    display:flex;
+    flex-direction: row;
+    gap:7rem;
+    height:20rem;
+    flex-wrap: wrap;
+    width:92vw;
+   .about-content{ 
+     .title{
+        color:variables.$light_text;
+        font-family: variables.$mono;
+        font-size: 1.3rem;
+        display:flex;
+        gap:.2rem;
+        margin-bottom: 3rem;
+        .title-number{
+            color:variables.$light_green;
+            margin-right:1rem;
+
+        }
+     
+      
+    } 
+    .icons{
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: row;
+        gap: .5rem;
+        margin-top: 1rem;
+        color:variables.$light_text;
+    }
+        font-size: .8rem;
+        width:55%;
+        font-family: variables.$poppins;
+        font-weight: 200;
+
+        }
+        .square{
+            margin-top: 4rem;
+            .square-1{
+                width: 13rem;
+                height: 13rem;
+                background-color:  variables.$light_green;
+            }
+            .square-2{
+                width: 13rem;
+                height: 13rem;
+                border: 1px solid variables.$light_green;
+                position: relative;
+                bottom:12.2rem;
+                left:.8rem;
+            }
+        }
+}
+@media screen and (max-width: 868px){
+    .about{
+        
+        justify-content: center;
+        gap:.3rem;
+        height:40rem;
+        margin:5rem 0rem;
+        flex-direction: row;
+        .about-content{
+            width:100%;
+            .icons{
+                justify-content: center;
+                gap:3rem;
+            }
+        }
+        .square{
+            margin-right: 2rem;
+        }
+    }
+}

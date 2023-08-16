@@ -5,9 +5,11 @@ const Sidebar = ({show, closeSideBar}) => {
 
   return (
    <div className='wrapper'
-   style={show !== true ? { display: "none" } : {}}
+   style={show !== true ? { display: "none" } : { display: "block"}}
    >
-   <div className={`side-bar ${show !== true ? 'open' : ''}`}>
+   <div className="side-bar"
+   
+   >
    <button className='top' onClick={() => closeSideBar()}>X</button>
 
    <div className='nav-items'>

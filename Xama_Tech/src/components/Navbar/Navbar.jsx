@@ -24,6 +24,7 @@ window.addEventListener('scroll', function() {
   }
   console.log(showSideBar);
  return (
+  <>
     <div className='nav-bar'>
       <span className='logo'><DiReact /></span>
       <nav className='nav-items'>
@@ -67,8 +68,12 @@ window.addEventListener('scroll', function() {
       </ul>
       </nav>
       <HiOutlineMenuAlt1  className='toggle-nav' onClick={() =>handleSideBar()}/>
-      <Sidebar show={showSideBar} closeSideBar={handleSideBar}/>
+   
     </div>
+       <Sidebar 
+      show={showSideBar} 
+      closeSideBar={handleSideBar}/>
+    </>
   )
 }
 

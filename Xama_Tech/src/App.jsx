@@ -3,6 +3,8 @@ import Layout from './components/Layout/Layout.scss'
 import Navbar from './components/Navbar/Navbar'
 import {BsFacebook, BsWhatsapp,BsInstagram,BsGithub} from 'react-icons/bs'
 import Sidebar from './components/Sidebar/Sidebar'
+import About from './components/About/About'
+import Works from './components/Works/Works'
 function App() {
 
   return (
@@ -34,11 +36,8 @@ function App() {
 
              <div className='hero-desc'>I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.</div>
              <button className='hero-button'>Contacter Nous !</button>
-             ddddddddddddddddddddddddddd
-             BsInstagram <br></br>
-             kdhgdhdjdd
-             <br></br>
-             hddjhdjhd
+            <About />
+            <Works />
              </div>
           </div>
 
