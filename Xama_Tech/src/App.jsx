@@ -5,6 +5,7 @@ import {BsFacebook, BsWhatsapp,BsInstagram,BsGithub} from 'react-icons/bs'
 import Sidebar from './components/Sidebar/Sidebar'
 import About from './components/About/About'
 import Works from './components/Works/Works'
+import Contact from './components/Contact/Contact'
 function App() {
 
   return (
@@ -38,6 +39,7 @@ function App() {
              <button className='hero-button'>Contacter Nous !</button>
             <About />
             <Works />
+            <Contact />
              </div>
           </div>
 
