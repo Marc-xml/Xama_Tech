@@ -4,7 +4,7 @@ import {DiReact} from 'react-icons/di'
 import {HiOutlineMenuAlt1} from 'react-icons/hi'
 import { useState } from 'react'
 import Sidebar from '../Sidebar/Sidebar'
-import { motion } from "framer-motion";
+import { motion,useScroll } from "framer-motion";
 const container = {
   hidden: { opacity: 1, scale: 0 },
   visible: {
@@ -12,7 +12,7 @@ const container = {
     scale: 1,
     transition: {
       delayChildren: 0.3,
-      staggerChildren: 0.1
+      staggerChildren: 0.2
     }
   }
 };
@@ -26,6 +26,7 @@ const item = {
 };
 
 const Navbar = () => {
+  const {scrollProgress} = useScroll();
     let lastScrollTop = 0;
 const navbar = document.querySelector('.nav-bar');
 
@@ -48,6 +49,7 @@ window.addEventListener('scroll', function() {
   <>
     <motion.div 
     className='nav-bar'
+    // style={{scaleX:scrollProgress}}
     variants={container}
       initial="hidden"
       animate="visible">

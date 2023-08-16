@@ -6,7 +6,11 @@ import Sidebar from './components/Sidebar/Sidebar'
 import About from './components/About/About'
 import Works from './components/Works/Works'
 import Contact from './components/Contact/Contact'
-import { motion } from "framer-motion";
+import {   motion,
+  useScroll,
+  useSpring,
+  useTransform,
+  MotionValue} from "framer-motion";
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -25,53 +29,61 @@ const item = {
   visible: {
     y: 0,
     opacity: 1
+  },
+  hiddenx:{x: 20, opacity :0},
+  visiblex:{
+    x:0,
+    opacity: 1
   }
 };
 
 function App() {
-
+ 
   return (
     <div className='layout'>
       <Navbar /> 
       <div className='page-body'>
 
-         <motiondiv className='welcome'>
-             <div className='welcome-info'
+         <div className='welcome'>
+             <motion.div className='welcome-info'
              variants={container}
              initial="hidden"
              animate="visible"
              >
-             <a>
+             <motion.a variants={item} >
              <BsFacebook />
-             </a>
-             <a>
+             </motion.a>
+             <motion.a variants={item}>
              <BsWhatsapp />
-             </a>
-             <a>
+             </motion.a>
+             <motion.a variants={item}>
              <BsInstagram />
-             </a>
-             <a>
+             </motion.a>
+             <motion.a variants={item}>
              <BsGithub />
-             </a>
-             <span className="vertical-line"></span>
+             </motion.a>
+             <motion.span variants={item} className="vertical-line"></motion.span>
 
-             </div>
+             </motion.div>
              <motion.div className='hero'
              variants={container}
              initial="hidden"
              animate="visible"
+          
+           
              >
              <motion.span variants={item} className='hero-title'>Slt Nous Sommes</motion.span>
              <motion.span variants={item} className='hero-name'>Xama Tech.</motion.span>
              <motion.span variants={item} className='hero-sub'>Nous Contruissons le web.</motion.span>
 
              <motion.div  variants={item}className='hero-desc'>I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.</motion.div>
-             <motion.button variants={item} className='hero-button'>Contacter Nous !</motion.button>
+             <motion.button variants={item} className='hero-button master'>Contacter Nous !</motion.button>
+             <motion.button variants={item} className='hero-button under'></motion.button>
             <About />
             <Works />
             <Contact />
              </motion.div>
-          </motiondiv>
+          </div>
 
           <div className='contact-info'>
           <span className="email">marcronaldonganyi@gmail.com</span>

@@ -77,6 +77,18 @@ body{
                     font-family: variables.$mono;
                     cursor: pointer;
                     margin-top: 2rem;
+                    z-index: 10;
+                    background-color: variables.$navy;
+                }
+                // .master:hover{
+                //             transform: translateY(-20px);
+                            
+                //             }
+                .under{
+                    position: relative;
+                    bottom:4.5rem;
+                    z-index: 4;
+                    background-color: variables.$light_green;
                 }
             }
         }
