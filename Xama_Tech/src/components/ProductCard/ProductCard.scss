@@ -1,0 +1,88 @@
+@use "../../styles/variables.scss";
+.card{
+    width:11rem;
+    height: 15rem;
+    background-color: variables.$light_navy;
+    border-radius: 5px;
+    font-family: variables.$poppins;
+    .image{
+        // background-color: variables.$light_green;
+        width: 100%;
+        height:58%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        overflow: hidden;
+        img{
+            border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+            width:100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.3s ease-in-out;
+
+        }
+        img:hover{
+            transform: scale(1.2);
+            transition: 0.3s ease-in-out;
+        }
+    }
+    .name{
+        text-align: center;
+        color:variables.$light_text;
+        font-weight: 300;
+        margin:.2rem 0;
+        font-size: .8rem;
+    }
+    .price{
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .actions{
+        margin:.2rem 0 0rem 0;
+        text-align: center;
+        .more{
+            background-color: transparent;
+            text-transform: uppercase;
+            border:1px solid variables.$light_green;
+            outline:none;
+            color:variables.$light_green;
+            border-radius: 2px;
+            height:1.8rem;
+            width:50%;
+            font-family: variables.$poppins;
+            margin:0 .2rem;
+            font-size: .65rem;
+            transition: 0.3s ease-in-out;
+            cursor:pointer
+
+
+        }
+        .more:hover{
+            background-color: variables.$light_green;
+            color:variables.$navy;
+            transition: 0.3s ease-in-out;
+        }
+        .buy{
+            background-color: variables.$light_green;
+            text-transform: uppercase;
+            border:none;
+            outline:none;
+            border-radius: 2px;
+            height:1.8rem;
+            width:35%;
+            font-size: .9rem;
+            font-family: variables.$poppins;
+            margin:0 .2rem;
+            transition: 0.3s ease-in-out;
+            cursor:pointer;
+
+        }
+        .buy:hover{
+            transition: 0.3s ease-in-out;
+            background-color: transparent;
+            border:1px solid variables.$light_green;
+            color:variables.$light_green;
+        }
+    }
+}

@@ -6,6 +6,7 @@ import Sidebar from './components/Sidebar/Sidebar'
 import About from './components/About/About'
 import Works from './components/Works/Works'
 import Contact from './components/Contact/Contact'
+import Store from './components/Store/Store'
 import {   motion,
   useScroll,
   useSpring,
@@ -79,9 +80,18 @@ function App() {
              <motion.div  variants={item}className='hero-desc'>I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.</motion.div>
              <motion.button variants={item} className='hero-button master'>Contacter Nous !</motion.button>
              <motion.button variants={item} className='hero-button under'></motion.button>
+            <div id='about'>
             <About />
+            </div>
+            <div id='works'>
             <Works />
+            </div>
+            <div id='contact'>
             <Contact />
+            </div>
+            <div id='store'>
+            <Store />
+            </div>
              </motion.div>
           </div>
 

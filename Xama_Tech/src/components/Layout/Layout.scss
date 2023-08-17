@@ -32,7 +32,7 @@ body{
 
                     border: none;
                     border: 1px solid variables.$dark_text;
-                    height: 80px;
+                    height: 140px;
                     width: 0;
                     margin-left:.5rem;
                   }
@@ -95,20 +95,22 @@ body{
         .contact-info{
             display: flex;
             flex-direction: column;
-            margin-top:13.5rem;
+            margin-top:13rem;
             font-family: variables.$mono;
             font-size: .8rem;
             position: fixed;
             right: 0;
             gap:10rem;
+            top:9rem;
             left:90%;
             .vertical-line{
                 border: none;
-                border: 1px solid variables.$dark_text;
-                width: 80px;
-                // width: 0;
-                margin-left:4rem;
-                transform: rotate(-90deg);
+                    border: 1px solid variables.$dark_text;
+                    height: 130px;
+                    width: 0;
+                    position: relative;
+                    left:4rem;
+                    bottom:5rem;
                 
             }
             .email{

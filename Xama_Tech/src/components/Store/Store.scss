@@ -1,0 +1,30 @@
+@use "../../styles/variables.scss";
+.store{
+    display: flex;
+    flex-direction:column;
+ 
+    margin: 4rem 0;
+    width: 100%;
+    .title{
+        font-size: 1.3rem;
+color:variables.$light_text;
+
+        .title-number{
+            color:variables.$light_green;
+        }
+    }
+    .sub{
+font-size: 1rem;
+color:variables.$light_text;
+font-family: variables.$poppins;
+font-weight: 300;
+
+    }
+    .items{
+        margin-top: 2rem;
+        display:flex;
+        gap:2.5rem;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+}

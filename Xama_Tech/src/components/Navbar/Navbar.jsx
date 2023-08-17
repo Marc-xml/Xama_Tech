@@ -60,28 +60,28 @@ window.addEventListener('scroll', function() {
       initial="hidden"
       animate="visible">
         <motion.li className='nav-item' variants={item}>
-         <a>
+         <a href='#about'>
          <span className='item-number'>1.</span>
          A Propos
          </a>
         </motion.li>
 
         <motion.li className='nav-item' variants={item}>
-        <a>
+        <a href='#works'>
         <span className='item-number'>2.</span>
         Nos Services
         </a>
        </motion.li>
 
        <motion.li className='nav-item' variants={item}>
-       <a>
+       <a href='#contact'>
        <span className='item-number'>3.</span>
        Contact
        </a>
       </motion.li>
 
       <motion.li className='nav-item' variants={item}>
-      <a>
+      <a href='#store'>
       <span className='item-number'>4.</span>
       Boutique
       </a>
