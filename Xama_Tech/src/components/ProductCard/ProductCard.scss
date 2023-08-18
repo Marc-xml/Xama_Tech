@@ -54,8 +54,7 @@
             margin:0 .2rem;
             font-size: .65rem;
             transition: 0.3s ease-in-out;
-            cursor:pointer
-
+            cursor:pointer;
 
         }
         .more:hover{
@@ -71,7 +70,7 @@
             border-radius: 2px;
             height:1.8rem;
             width:35%;
-            font-size: .9rem;
+            font-size: .8rem;
             font-family: variables.$poppins;
             margin:0 .2rem;
             transition: 0.3s ease-in-out;
@@ -84,5 +83,11 @@
             border:1px solid variables.$light_green;
             color:variables.$light_green;
         }
+    }
+}
+@media screen and (max-width:583px){
+    .card{
+        width:10rem;
+        height: 14rem;
     }
 }

@@ -23,8 +23,22 @@ font-weight: 300;
     .items{
         margin-top: 2rem;
         display:flex;
-        gap:2.5rem;
+        gap:2rem;
         justify-content: start;
         flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:826px){
+    .store{
+        .items{
+            gap:1rem;
+        }
+    }
+}
+@media screen and (max-width:583px){
+    .store{
+        .items{
+            gap:.5rem;
+        }
     }
 }

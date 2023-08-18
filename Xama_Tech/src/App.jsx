@@ -7,6 +7,8 @@ import About from './components/About/About'
 import Works from './components/Works/Works'
 import Contact from './components/Contact/Contact'
 import Store from './components/Store/Store'
+import Modal from './components/Modal/Modal'
+import Footer from './components/Footer/Footer'
 import {   motion,
   useScroll,
   useSpring,
@@ -91,6 +93,9 @@ function App() {
             </div>
             <div id='store'>
             <Store />
+            </div>
+            <div className='footer'>
+            <Footer />
             </div>
              </motion.div>
           </div>
