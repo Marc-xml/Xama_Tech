@@ -5,6 +5,7 @@ import {HiOutlineMenuAlt1} from 'react-icons/hi'
 import { useState } from 'react'
 import Sidebar from '../Sidebar/Sidebar'
 import { motion,useScroll } from "framer-motion";
+import logo from '../../assets/ortez2.png'
 const container = {
   hidden: { opacity: 1, scale: 0 },
   visible: {
@@ -53,7 +54,7 @@ window.addEventListener('scroll', function() {
     variants={container}
       initial="hidden"
       animate="visible">
-      <motion.span className='logo' variants={item}><DiReact /></motion.span>
+      <motion.span className='logo' variants={item}><img src={logo} /></motion.span>
       <nav className='nav-items'>
       <motion.ul
       variants={container}

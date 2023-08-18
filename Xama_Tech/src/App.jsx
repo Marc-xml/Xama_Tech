@@ -40,6 +40,7 @@ const item = {
   }
 };
 
+
 function App() {
  
   return (
@@ -54,15 +55,15 @@ function App() {
              animate="visible"
              >
              <motion.a variants={item} >
-             <BsFacebook />
+             <BsFacebook onClick={() => handleNext()} />
              </motion.a>
              <motion.a variants={item}>
-             <BsWhatsapp />
+             <BsWhatsapp onClick={() =>handlePrev()}/>
              </motion.a>
-             <motion.a variants={item}>
+             <motion.a variants={item} className='next'>
              <BsInstagram />
              </motion.a>
-             <motion.a variants={item}>
+             <motion.a variants={item} className='prev'>
              <BsGithub />
              </motion.a>
              <motion.span variants={item} className="vertical-line"></motion.span>
@@ -76,8 +77,11 @@ function App() {
            
              >
              <motion.span variants={item} className='hero-title'>Slt Nous Sommes</motion.span>
-             <motion.span variants={item} className='hero-name'>Xama Tech.</motion.span>
-             <motion.span variants={item} className='hero-sub'>Nous Contruissons le web.</motion.span>
+             <motion.span variants={item} className='hero-name'>Ortez.</motion.span>
+             <motion.span variants={item} className='hero-sub container'>
+              <span className='slide'>Nous Contruisson le web.</span>             
+            
+             </motion.span>
 
              <motion.div  variants={item}className='hero-desc'>I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.</motion.div>
              <motion.button variants={item} className='hero-button master'>Contacter Nous !</motion.button>
