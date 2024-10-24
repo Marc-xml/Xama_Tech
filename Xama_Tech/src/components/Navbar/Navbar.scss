@@ -8,16 +8,24 @@
     background-color: variables.$navy;
     backdrop-filter: blur(30px);
     position: fixed;
-    z-index:15;
-    transition: top .3s;
-    top:0;
-    left:0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+
+    &.sticky {
+        // background-color: rgba(255, 255, 255, 0.9); // Adjust this color as needed
+        // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    top: 0;
+    left: 0;
     right: 0;
     .logo{
-        width: 10.6rem;
-        height: 2.2rem;
-        margin-top: 1.6rem;
+        // width: 10.6rem;
+        // height: 2.2rem;
+        // margin-top: 1.6rem;
         color: variables.$light_green;
+        padding:2rem;
+        font-size: 1.2rem;
       
     img{
         width:100%;
@@ -111,4 +119,26 @@
             display: block;
         }
     }
+}
+
+.logo-container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left:10px;
+  top:20px;
+
+  .logo-circle {
+    color: variables.$light_green;
+  }
+}
+
+.logo-text {
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  color:variables.$light_green
 }

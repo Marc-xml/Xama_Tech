@@ -1,7 +1,6 @@
-
 import Layout from './components/Layout/Layout.scss'
 import Navbar from './components/Navbar/Navbar'
-import {BsFacebook, BsWhatsapp,BsInstagram,BsGithub} from 'react-icons/bs'
+import {BsFacebook, BsWhatsapp,BsInstagram,BsGithub, BsLinkedin} from 'react-icons/bs'
 import Sidebar from './components/Sidebar/Sidebar'
 import About from './components/About/About'
 import Works from './components/Works/Works'
@@ -9,11 +8,13 @@ import Contact from './components/Contact/Contact'
 import Store from './components/Store/Store'
 import Modal from './components/Modal/Modal'
 import Footer from './components/Footer/Footer'
+
 import {   motion,
   useScroll,
   useSpring,
   useTransform,
   MotionValue} from "framer-motion";
+import { useEffect } from 'react';
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -42,7 +43,10 @@ const item = {
 
 
 function App() {
- 
+  useEffect(() => {
+    window.history.scrollRestoration = 'manual';
+  }, []);
+
   return (
     <div className='layout'>
       <Navbar /> 
@@ -54,17 +58,43 @@ function App() {
              initial="hidden"
              animate="visible"
              >
-             <motion.a variants={item} >
-             <BsFacebook onClick={() => handleNext()} />
+             <motion.a 
+              href="https://github.com/Marc-xml/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              variants={item}
+              style={{color:"inherit"}}
+             >
+              <BsGithub />
              </motion.a>
-             <motion.a variants={item}>
-             <BsWhatsapp onClick={() =>handlePrev()}/>
+             <motion.a 
+              href="https://www.linkedin.com/in/marcnganyi" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              variants={item}
+              style={{color:"inherit"}}
+             >
+              <BsLinkedin />
              </motion.a>
-             <motion.a variants={item} className='next'>
-             <BsInstagram />
+             <motion.a 
+              href="https://wa.me/+237674159544" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              variants={item} 
+              className='next'
+              style={{color:"inherit"}}
+             >
+              <BsWhatsapp />
              </motion.a>
-             <motion.a variants={item} className='prev'>
-             <BsGithub />
+             <motion.a 
+              href="https://www.facebook.com/Marc Ronald" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              variants={item} 
+              className='prev'
+              style={{color:"inherit"}}
+             >
+              <BsFacebook />
              </motion.a>
              <motion.span variants={item} className="vertical-line"></motion.span>
 
@@ -76,15 +106,15 @@ function App() {
           
            
              >
-             <motion.span variants={item} className='hero-title'>Slt Nous Sommes</motion.span>
-             <motion.span variants={item} className='hero-name'>Ortez.</motion.span>
+             <motion.span variants={item} className='hero-title'>Hello, I am</motion.span>
+             <motion.span variants={item} className='hero-name'>Marc Ronaldo.</motion.span>
              <motion.span variants={item} className='hero-sub container'>
-              <span className='slide'>Nous Contruisson le web.</span>             
+              <span className='slide'>A fullstack developer.</span>             
             
              </motion.span>
 
-             <motion.div  variants={item}className='hero-desc'>I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.</motion.div>
-             <motion.button variants={item} className='hero-button master'>Contacter Nous !</motion.button>
+             <motion.div    variants={item}   className='hero-desc'>A Software Engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently IT Technician at GS1 Cameroon</motion.div>
+             <motion.button variants={item} className='hero-button master'> <a href="https://wa.me/674159544" style={{textDecoration: 'none', color:'inherit'}}>Message me</a> </motion.button>
              <motion.button variants={item} className='hero-button under'></motion.button>
             <div id='about'>
             <About />

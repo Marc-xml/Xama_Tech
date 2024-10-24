@@ -2,7 +2,7 @@
 .store{
     display: flex;
     flex-direction:column;
- 
+    text-align: center;
     margin: 4rem 0;
     width: 100%;
     .title{
@@ -24,8 +24,9 @@ font-weight: 300;
         margin-top: 2rem;
         display:flex;
         gap:2rem;
-        justify-content: start;
+        justify-content: center;
         flex-wrap: wrap;
+        font-size: 1.5rem;
     }
 }
 //  

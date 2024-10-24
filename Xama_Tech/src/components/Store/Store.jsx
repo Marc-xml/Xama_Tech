@@ -5,19 +5,12 @@ const Store = () => {
   return (
     <div className='store'>
       <span className='title'>
-      <span className='title-number'>04.</span>Boutique
+      <span className='title-number'>04.</span>Store
       </span>
-      <span className='sub'>Offre du moment</span>
+      <span className='sub'></span>
 
       <div className='items'>
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+       <div>comng soon!</div>
       </div>
     </div>
   )

@@ -48,6 +48,7 @@ body{
                 .hero-title{
                     color:variables.$light_green;
                     margin-bottom:1rem;
+                    margin-top: 4rem !important;
                 }
                 .hero-name{
                     font-size: clamp(2rem, 3.5rem, 3.5rem);
@@ -116,7 +117,7 @@ body{
                     height: 130px;
                     width: 0;
                     position: relative;
-                    left:4rem;
+                    left:5rem;
                     bottom:5rem;
                 
             }

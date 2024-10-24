@@ -1,6 +1,6 @@
 import React from 'react'
 import "./About.scss"
-import {BiLogoReact, BiLogoJavascript, BiLogoNodejs} from "react-icons/bi"
+import {BiLogoReact, BiLogoJavascript, BiLogoNodejs,} from "react-icons/bi"
 import {DiHtml5} from "react-icons/di"
 import { motion } from 'framer-motion'
 const container = {
@@ -34,10 +34,9 @@ const About = () => {
       whileInView="visible"
       >
          <motion.span variants={item} className='title'>
-      <span className='title-number'>01.</span>A Propos 
+      <span className='title-number'>01.</span>About me 
       </motion.span>
-      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. 
-      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. 
+      Armed with a Bachelor of Technology degree in Software Engineering, my passion lies in crafting innovative solutions with the MERN stack, along with exploring frameworks like Next.js and Laravel. When I'm not immersed in coding, you'll find me indulging in anime and diving deep into the world of literature. Fuelled by an insatiable curiosity, I constantly seek to unravel the "why" behind everything I encounter. Eager to expand my horizons and acquire new knowledge, I'm always ready to embark on exciting learning adventures.
       <motion.div
        className='icons'
        variants={container}
@@ -48,6 +47,7 @@ const About = () => {
       <motion.span variants={item}><DiHtml5 /></motion.span>
       <motion.span variants={item}><BiLogoJavascript /></motion.span>
       <motion.span variants={item}><BiLogoNodejs /></motion.span>
+      {/* <motion.span variants={item}><BiLogoNextJs /></motion.span> */}
       </motion.div>
       </motion.div>
       <motion.div
@@ -56,8 +56,10 @@ const About = () => {
        initial="hidden"
        whileInView="visible"
       >
-      <motion.div variants={item} className='square-1'></motion.div>
-      <motion.div variants={item} className='square-2'></motion.div>
+        <motion.div variants={item} className='square-2'></motion.div>
+        <motion.div variants={item} className='square-1'>
+          <img src="/nganyi_marc.jpg" alt="Nganyi Marc" />
+        </motion.div>
       </motion.div>
     </div>
   )

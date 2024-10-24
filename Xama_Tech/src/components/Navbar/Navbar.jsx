@@ -54,7 +54,30 @@ window.addEventListener('scroll', function() {
     variants={container}
       initial="hidden"
       animate="visible">
-      <motion.span className='logo' variants={item}><img src={logo} /></motion.span>
+      <motion.div className='logo-container' variants={item}>
+        <svg width="60" height="60" viewBox="0 0 60 60">
+          <motion.circle
+            cx="30"
+            cy="30"
+            r="26"
+            stroke="currentColor"
+            strokeWidth="2"
+            fill="none"
+            className="logo-circle"
+            initial={{ scale: 1, opacity: 0.5 }}
+            animate={{ 
+              scale: [1, 1.1, 1],
+              opacity: [0.5, 1, 0.5],
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut"
+            }}
+          />
+        </svg>
+        <span className='logo-text'>MR</span>
+      </motion.div>
       <nav className='nav-items'>
       <motion.ul
       variants={container}
@@ -63,33 +86,33 @@ window.addEventListener('scroll', function() {
         <motion.li className='nav-item' variants={item}>
          <a href='#about'>
          <span className='item-number'>1.</span>
-         A Propos
+         About me
          </a>
         </motion.li>
 
         <motion.li className='nav-item' variants={item}>
         <a href='#works'>
         <span className='item-number'>2.</span>
-        Nos Services
+        My Projects
         </a>
        </motion.li>
 
        <motion.li className='nav-item' variants={item}>
        <a href='#contact'>
        <span className='item-number'>3.</span>
-       Contact
+       Contact Me
        </a>
       </motion.li>
 
       <motion.li className='nav-item' variants={item}>
       <a href='#store'>
       <span className='item-number'>4.</span>
-      Boutique
+      Store
       </a>
      </motion.li>
 
  
-     <motion.a variants={item}>
+     <motion.a variants={item} href='https://wa.me/674159544'>
      <span className=''>
      <button className='contact-button'>Whatsapp</button>
 
