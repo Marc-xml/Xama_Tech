@@ -15,6 +15,7 @@ import {   motion,
   useTransform,
   MotionValue} from "framer-motion";
 import { useEffect } from 'react';
+import { BiPaperPlane } from 'react-icons/bi'
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -114,7 +115,7 @@ function App() {
              </motion.span>
 
              <motion.div    variants={item}   className='hero-desc'>A Software Engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently IT Technician at GS1 Cameroon</motion.div>
-             <motion.button variants={item} className='hero-button master'> <a href="https://wa.me/674159544" style={{textDecoration: 'none', color:'inherit'}}>Message me</a> </motion.button>
+             <motion.button variants={item} className='hero-button master'> <a href="https://wa.me/674159544" style={{textDecoration: 'none', color:'inherit', }}>Message me </a> </motion.button>
              <motion.button variants={item} className='hero-button under'></motion.button>
             <div id='about'>
             <About />

@@ -48,7 +48,7 @@ const Works = () => {
      whileInView="visible"
      className='inside-content'>
      <motion.div variants={item} className='name'>
-       <span className='content-title'> <a href="http://" style={{color:'inherit'}}>Online banking system </a></span>
+       <span className='content-title'> <a href="https://github.com/Marc-xml/bankingsystem/tree/finalproject" style={{color:'inherit'}}>Online banking system </a></span>
        <span className='content-name'>Invoice</span>
            
      </motion.div>
@@ -73,7 +73,7 @@ An online banking system that enable customers of a bank have access to financia
      whileInView="visible"
      className='inside-content'>
      <motion.div variants={item} className='name'>
-       <span className='content-title'><a href="http://" style={{color:'inherit'}}>Ecommerce website </a></span>
+       <span className='content-title'><a href="https://github.com/NdipEstaban/Grace/tree/client" style={{color:'inherit'}}>Ecommerce website </a></span>
        <span className='content-name'>Mahu Market</span>
            
      </motion.div>
@@ -97,7 +97,7 @@ An online banking system that enable customers of a bank have access to financia
      whileInView="visible"
      className='inside-content revert'>
      <motion.div variants={item} className='name'>
-       <span className='content-title'><a href="http://" style={{color:'inherit'}}>GS1 CRM </a></span>
+       <span className='content-title'><a href="https://github.com/Marc-xml/GS1-CRM/tree/master" style={{color:'inherit'}}>GS1 CRM </a></span>
        <span className='content-name'>CRM</span>
            
      </motion.div>
@@ -125,7 +125,7 @@ An online banking system that enable customers of a bank have access to financia
      whileInView="visible"
      className='inside-content'>
      <motion.div variants={item} className='name'>
-       <span className='content-title'><a href="http://" style={{color:'inherit'}}>Pharmacy Mgt System </a></span>
+       <span className='content-title'><a href="https://github.com/Marc-xml/Pharmacy-management-system-main" style={{color:'inherit'}}>Pharmacy Mgt System </a></span>
        <span className='content-name'>BTECH PHARMA</span>
            
      </motion.div>

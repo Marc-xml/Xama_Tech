@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import './Sidebar.scss'
+import { BiLogoWhatsapp } from 'react-icons/bi'
 const Sidebar = ({show, closeSideBar}) => {
 
   return (
@@ -13,22 +14,22 @@ const Sidebar = ({show, closeSideBar}) => {
    <button className='top' onClick={() => closeSideBar()}>X</button>
 
    <div className='nav-items'>
-   <a>
-   <span className='item-number'>01.</span>Accueille
+   <a href='#about'>
+   <span className='item-number'>01.</span>About me
    </a>
 
-   <a>
-   <span className='item-number'>02.</span>A propos
+   <a href='#works'>
+   <span className='item-number'>02.</span>My Projects
    </a>
 
-   <a>
-   <span className='item-number'>03.</span>A propos
+   <a href='#contact'>
+   <span className='item-number'>03.</span>Contact Me
    </a>
-   <a>
-   <span className='item-number'>04.</span>A propos
+   <a href='#store'>
+   <span className='item-number'>04.</span>Store
    </a>
-    <a>
-   <button className='nav-button'>Whatsapp</button>
+    <a href='https://wa.me/674159544'>
+   <button className='nav-button'><BiLogoWhatsapp /></button>
     
     </a>
    </div>

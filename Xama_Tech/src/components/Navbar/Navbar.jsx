@@ -6,6 +6,7 @@ import { useState } from 'react'
 import Sidebar from '../Sidebar/Sidebar'
 import { motion,useScroll } from "framer-motion";
 import logo from '../../assets/ortez2.png'
+import { BiLogoWhatsapp } from 'react-icons/bi'
 const container = {
   hidden: { opacity: 1, scale: 0 },
   visible: {
@@ -114,7 +115,7 @@ window.addEventListener('scroll', function() {
  
      <motion.a variants={item} href='https://wa.me/674159544'>
      <span className=''>
-     <button className='contact-button'>Whatsapp</button>
+     <button className='contact-button' ><BiLogoWhatsapp /></button>
 
      </span>
      </motion.a>
