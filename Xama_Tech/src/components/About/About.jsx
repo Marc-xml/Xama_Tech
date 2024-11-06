@@ -36,8 +36,9 @@ const About = () => {
          <motion.span variants={item} className='title'>
       <span className='title-number'>01.</span>About me 
       </motion.span>
-      Armed with a Bachelor of Technology degree in Software Engineering, my passion lies in crafting innovative solutions with the MERN stack, along with exploring frameworks like Next.js and Laravel. When I'm not immersed in coding, you'll find me indulging in anime and diving deep into the world of literature. Fuelled by an insatiable curiosity, I constantly seek to unravel the "why" behind everything I encounter. Eager to expand my horizons and acquire new knowledge, I'm always ready to embark on exciting learning adventures.
-      <motion.div
+      I hold a Bachelor of Technology degree in Software Engineering and currently focus on web development, with a keen interest in expanding my skills and exploring new horizons in technology. I specialize in building dynamic web applications using the MERN stack, and I’ve also worked with Next.js, Laravel, and PHP on various projects. Collaboration is key for me, and I’ve had the pleasure of working alongside other talented developers to deliver impactful solutions.
+
+When I’m not coding, you can usually find me indulging in anime or reading, as both activities fuel my creativity and curiosity. I’m a team player who thrives in collaborative environments, always eager to learn, adapt, and take on new challenges. With an unwavering curiosity and a drive for continuous growth, I’m excited to keep evolving as a developer and tackle new projects that push the boundaries of what I can achieve.      <motion.div
        className='icons'
        variants={container}
        initial="hidden"

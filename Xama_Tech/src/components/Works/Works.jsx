@@ -53,8 +53,10 @@ const Works = () => {
            
      </motion.div>
      <motion.div variants={item} className='square-1'>
-An online banking system that enable customers of a bank have access to financial services online
-               Built using<span> HTML, SASS, Javscript and Laravel</span>
+
+          Invoice is a web-based banking solution that allows customers to access financial services conveniently from home,
+           eliminating the need to stand in long queues. This system not only enhances the customer experience but also streamlines operations for bank employees, automating many tasks and reducing pressure. The platform features three distinct views: Customer, Bank Teller, and System Admin   
+          Built using <span>HTML, CSS,JS and Laravel</span> for the backend, the system integrates Graph.js for visualizing financial data through dynamic graphs.
            </motion.div>
      </motion.div>
      </motion.div>
@@ -78,8 +80,7 @@ An online banking system that enable customers of a bank have access to financia
            
      </motion.div>
      <motion.div variants={item} className='square-1'>
-               Robust SPA Ecommerce platform permitting the sale of products and management of orders
-                Built using<span>React, SASS, Redux-toolkit, MONGODB, Express and Prisma</span>
+     This eCommerce platform enables seamless online sales, order management, and more. Developed in collaboration with <a href='https://github.com/NdipEstaban' style={{color:'inherit'}}>@Ndip Estaband</a>  and <a href='https://github.com/XavierDom' style={{color:'inherit'}}>@Xavier Tchami</a>  , the platform is built using <span>React, SASS, Redux Toolkit, MongoDB, Express, and Prisma </span>. We leveraged Amazon S3 for efficient media processing and storage. The solution streamlines the shopping experience for customers while providing powerful backend capabilities for managing orders, inventory, and product listings.
            </motion.div>
      </motion.div>
      </motion.div>
@@ -104,8 +105,7 @@ An online banking system that enable customers of a bank have access to financia
            
      </motion.div>
      <motion.div variants={item} className='square-1'>
-An online rental platform which gives the possibility for individuals looking for housing do so without with ease
-               Built using<span> NextJs,MongoDB</span>
+     Developed in collaboration with <a href='https://github.com/NdipEstaban' style={{color:'inherit'}}>@Ndip Estaband</a>, this online rental platform allows individuals looking to relocate to easily browse listings for available rental properties, find options that suit their needs, and request a visit. Built using <span>Next.js and Tailwind CSS with MongoDB for the Backend </span>, the platform offers a smooth, responsive user experience. We also integrated Amazon S3 for efficient image storage, ensuring fast load times and smooth media handling               Built using<span> NextJs,MongoDB</span>
            </motion.div>
      </motion.div>
      </motion.div>
@@ -124,12 +124,13 @@ An online rental platform which gives the possibility for individuals looking fo
      className='inside-content'>
      <motion.div variants={item} className='name'>
        <span className='content-title'><a href="https://gs1-crm.onrender.com" style={{color:'inherit'}}>CRM </a></span>
-       <span className='content-name'>Mahu Market</span>
+       <span className='content-name'>GS1 CRM</span>
            
      </motion.div>
      <motion.div variants={item} className='square-1'>
-               Robust SPA Ecommerce platform permitting the sale of products and management of orders
-                Built using<span>React, SASS, Redux-toolkit, MONGODB, Express and Prisma</span>
+     This Customer Relationship Management (CRM) system was built to streamline and optimize client interactions.
+      The frontend is designed using <span>Tailwind CSS</span> and <span>Ant Design</span> for a modern, responsive interface, while <span>React</span> and <span>Redux</span> manage the state and user interactions. The backend is powered by MongoDB, ensuring scalable and efficient data management. 
+     This solution helps businesses better track and manage their customer relationships with ease.
            </motion.div>
      </motion.div>
      </motion.div>
@@ -151,13 +152,12 @@ An online rental platform which gives the possibility for individuals looking fo
      whileInView="visible"
      className='inside-content'>
      <motion.div variants={item} className='name'>
-       <span className='content-title'> <a href="https://immobi-sa.vercel.app/" style={{color:'inherit'}}>Online Rental platform </a></span>
-       <span className='content-name'>Immobi</span>
+       <span className='content-title'> <a href="https://immobi-sa.vercel.app/" style={{color:'inherit'}}>Pharmacy Management System</a></span>
+       <span className='content-name'>Pharma</span>
            
      </motion.div>
      <motion.div variants={item} className='square-1'>
-An online rental platform which gives the possibility for individuals looking for housing do so without with ease
-               Built using<span> NextJs,MongoDB</span>
+     This Pharmacy Management System simplifies the management of pharmacy operations, including inventory tracking, sales, and customer management. Built with <span>Laravel</span> for the backend and <span>MySQL</span> for database management, the system ensures reliability and scalability. The frontend is designed with Bootstrap, providing a clean and responsive user interface. This solution helps pharmacies streamline their workflows and improve operational efficiency
            </motion.div>
      </motion.div>
      </motion.div>
