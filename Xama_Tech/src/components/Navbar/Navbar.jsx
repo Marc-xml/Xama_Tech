@@ -32,15 +32,15 @@ const Navbar = () => {
     let lastScrollTop = 0;
 const navbar = document.querySelector('.nav-bar');
 
-window.addEventListener('scroll', function() {
-  const scrollTop = window.scrollY || document.documentElement.scrollTop;
-  if (scrollTop > lastScrollTop) {
-    navbar.style.top = '-60px';
-  } else {
-    navbar.style.top = '0';
-  }
-  lastScrollTop = scrollTop;
-});
+// window.addEventListener('scroll', function() {
+//   const scrollTop = window.scrollY || document.documentElement.scrollTop;
+//   if (scrollTop > lastScrollTop) {
+//     navbar.style.top = '-60px';
+//   } else {
+//     navbar.style.top = '0';
+//   }
+//   lastScrollTop = scrollTop;
+// });
  const [showSideBar, setShowSideBar] = useState(false);
   const handleSideBar = () =>{
     setShowSideBar(!showSideBar);

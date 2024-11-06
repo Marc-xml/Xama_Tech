@@ -39,7 +39,7 @@ const Works = () => {
      whileInView="visible"
      className='work-content revert '>
      <motion.div variants={item} className='square inverse'>
-     <img src={"/banking.png"} alt="" srcset="" />
+     <img src={"/banking.png"} alt="Banking System Screenshot" />
      </motion.div>
     
      <motion.div
@@ -65,7 +65,7 @@ An online banking system that enable customers of a bank have access to financia
      whileInView="visible"
      className='work-content'>
      <motion.div variants={item} className='square'>
-     <img src={"/mayu.png"} alt="" srcset="" />
+     <img src={"/mayu1.png"} alt="Ecommerce Website Screenshot" />
      </motion.div>
      <motion.div 
      variants={container}
@@ -73,7 +73,7 @@ An online banking system that enable customers of a bank have access to financia
      whileInView="visible"
      className='inside-content'>
      <motion.div variants={item} className='name'>
-       <span className='content-title'><a href="https://github.com/NdipEstaban/Grace/tree/client" style={{color:'inherit'}}>Ecommerce website </a></span>
+       <span className='content-title'><a href="https://mayu-market.onrender.com/" style={{color:'inherit'}}>Ecommerce website </a></span>
        <span className='content-name'>Mahu Market</span>
            
      </motion.div>
@@ -83,41 +83,39 @@ An online banking system that enable customers of a bank have access to financia
            </motion.div>
      </motion.div>
      </motion.div>
+
      <motion.div 
      variants={container}
      initial="hidden"
      whileInView="visible"
      className='work-content revert '>
      <motion.div variants={item} className='square inverse'>
-     <img src={"/erp.png"} alt="" srcset="" />
-     </motion.div> 
+     <img src={"/imombi.png"} alt="Online Rental Platform Screenshot" />
+     </motion.div>
+    
      <motion.div
      variants={container}
      initial="hidden"
      whileInView="visible"
-     className='inside-content revert'>
+     className='inside-content'>
      <motion.div variants={item} className='name'>
-       <span className='content-title'><a href="https://github.com/Marc-xml/GS1-CRM/tree/master" style={{color:'inherit'}}>GS1 CRM </a></span>
-       <span className='content-name'>CRM</span>
+       <span className='content-title'> <a href="https://immobi-sa.vercel.app/" style={{color:'inherit'}}>Online Rental platform </a></span>
+       <span className='content-name'>Immobi</span>
            
      </motion.div>
      <motion.div variants={item} className='square-1'>
-                This system helps in managing and analyzing interactions  with customers , clients and sale prospects .
-              Built using<span> React.js, Redux, MONGODB, Mongoose</span>
+An online rental platform which gives the possibility for individuals looking for housing do so without with ease
+               Built using<span> NextJs,MongoDB</span>
            </motion.div>
      </motion.div>
      </motion.div>
-    
-
-  
-
      <motion.div 
      variants={container}
      initial="hidden"
      whileInView="visible"
      className='work-content'>
      <motion.div variants={item} className='square'>
-     <img src={"/pharm.png"} alt="" srcset="" />
+     <img src={"/erp.png"} alt="Ecommerce Website Screenshot" />
      </motion.div>
      <motion.div 
      variants={container}
@@ -125,13 +123,41 @@ An online banking system that enable customers of a bank have access to financia
      whileInView="visible"
      className='inside-content'>
      <motion.div variants={item} className='name'>
-       <span className='content-title'><a href="https://github.com/Marc-xml/Pharmacy-management-system-main" style={{color:'inherit'}}>Pharmacy Mgt System </a></span>
-       <span className='content-name'>BTECH PHARMA</span>
+       <span className='content-title'><a href="https://gs1-crm.onrender.com" style={{color:'inherit'}}>CRM </a></span>
+       <span className='content-name'>Mahu Market</span>
            
      </motion.div>
      <motion.div variants={item} className='square-1'>
-               Enables manegement and automation of variouspharmacy operations such as inventory mgt, billing mgt, Reporting etc
-                Built using<span>HTML, CSS , JS, Laravel</span>
+               Robust SPA Ecommerce platform permitting the sale of products and management of orders
+                Built using<span>React, SASS, Redux-toolkit, MONGODB, Express and Prisma</span>
+           </motion.div>
+     </motion.div>
+     </motion.div>
+
+  
+
+     <motion.div 
+     variants={container}
+     initial="hidden"
+     whileInView="visible"
+     className='work-content revert '>
+     <motion.div variants={item} className='square inverse'>
+     <img src={"/pharm.png"} alt="Online Rental Platform Screenshot" />
+     </motion.div>
+    
+     <motion.div
+     variants={container}
+     initial="hidden"
+     whileInView="visible"
+     className='inside-content'>
+     <motion.div variants={item} className='name'>
+       <span className='content-title'> <a href="https://immobi-sa.vercel.app/" style={{color:'inherit'}}>Online Rental platform </a></span>
+       <span className='content-name'>Immobi</span>
+           
+     </motion.div>
+     <motion.div variants={item} className='square-1'>
+An online rental platform which gives the possibility for individuals looking for housing do so without with ease
+               Built using<span> NextJs,MongoDB</span>
            </motion.div>
      </motion.div>
      </motion.div>

@@ -137,7 +137,7 @@ function App() {
 
           <div className='contact-info'>
           <span className="email">marcronaldonganyi@gmail.com</span>
-          <span class="vertical-line"></span>
+          <span className="vertical-line"></span>
           
           </div>
 

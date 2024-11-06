@@ -103,6 +103,8 @@ body{
         .contact-info{
             display: flex;
             flex-direction: column;
+            justify-items: center;
+            align-items: center;
             margin-top:13rem;
             font-family: variables.$mono;
             font-size: .8rem;
@@ -116,9 +118,9 @@ body{
                     border: 1px solid variables.$dark_text;
                     height: 130px;
                     width: 0;
-                    position: relative;
-                    left:5rem;
-                    bottom:5rem;
+                    // position: relative;
+                    // left:5rem;
+                    // bottom:5rem;
                 
             }
             .email{
